@@ -14,3 +14,7 @@ Examples:
 
 ### To run tests: 
  - mvn test
+
+### To run benchmark
+ - mvn package
+ - java -jar benchmarks.jar BenchmarkBigNumbers
