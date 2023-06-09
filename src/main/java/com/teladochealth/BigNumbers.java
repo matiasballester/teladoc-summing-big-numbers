@@ -4,8 +4,8 @@ public class BigNumbers {
 
     /**
      * Take 2 big numbers represented as String. It's assuming both are non-negative numbers
-     * Get their length and use iterate them from end to start
-     * Initialize sum with the carry value (it will be 0 the first time)
+     * Get their length, use it to set the indexes for each number, iterate them from end to start
+     * Initialize sum variable with the carry value (it will be 0 the first time)
      * Grab each digit accessing to the String by index, and update sum
      * Append the result of sum mod 10 (it will give us the reminder) in the string builder.
      *  i.e:  8 + 6 = 14
@@ -14,7 +14,10 @@ public class BigNumbers {
      *  i.e: 8 + 6 = 14
      *      14 / 10 = 1.4
      *      carry = 1
-     * Since we store the digits from end to beginning we need to reverse it before to return it
+     * It will be executed while indexes are greater equals than 0 (any of them) or carry is not 0
+     *
+     * Once outside the while loop, since we store the digits from end to beginning we need to reverse the string builder
+     * before to return the result as a String
      *
      * O(n) time | O(n) space
      *
