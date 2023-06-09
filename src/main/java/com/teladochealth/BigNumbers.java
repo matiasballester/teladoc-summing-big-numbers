@@ -14,6 +14,8 @@ public class BigNumbers {
      *  i.e: 8 + 6 = 14
      *      14 / 10 = 1.4
      *      carry = 1
+     * Since we store the digits from end to beginning we need to reverse it before to return it
+     *
      * O(n) time | O(n) space
      *
      * @param number1
